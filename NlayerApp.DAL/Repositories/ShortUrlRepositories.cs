@@ -22,27 +22,25 @@ namespace NlayerApp.DAL.Repositories
         {
             return db.ShortUrls;
         }
-
-        public IEnumerable<ShortUrlModel> Find(Func<ShortUrlModel, Boolean> predicate)
+        public ShortUrlModel GetByUrl(string url)
         {
-            return db.ShortUrls.Where(predicate).ToList();
+            return db.ShortUrls.FirstOrDefault(x => x.Url == url);
         }
 
+        public ShortUrlModel GetByKey(string key)
+        {
+            return db.ShortUrls.FirstOrDefault(x => x.ShortUrl == key);
+        }
 
         public void Create(ShortUrlModel shortUrl)
         {
            db.ShortUrls.Add(shortUrl);
+           db.SaveChanges();
         }
 
         public void Update(ShortUrlModel shortUrl)
         {
-            var stored = db.ShortUrls.FirstOrDefault(x => x.Id == shortUrl.Id);
-            if (stored == null)
-                return;
-            stored.Url = shortUrl.Url;
-            stored.ShortUrl = shortUrl.ShortUrl;
-            stored.CountRedirects = shortUrl.CountRedirects;
-            stored.DateCreated = shortUrl.DateCreated;
+            db.SaveChanges();
         }
     }
 }

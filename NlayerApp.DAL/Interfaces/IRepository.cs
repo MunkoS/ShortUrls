@@ -9,8 +9,8 @@ namespace NlayerApp.DAL.Interfaces
     public interface IRepository<T> where T : class
     {
         IEnumerable<T> GetAll();
-
-        IEnumerable<T> Find(Func<T, Boolean> predicate);
+        T GetByUrl(string url);
+        T GetByKey(string key);
 
         void Create(T item);
 

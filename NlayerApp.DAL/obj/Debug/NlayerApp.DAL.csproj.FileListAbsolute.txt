@@ -1,0 +1,10 @@
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\bin\Debug\NlayerApp.DAL.dll.config
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\bin\Debug\NlayerApp.DAL.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\bin\Debug\NlayerApp.DAL.pdb
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\bin\Debug\EntityFramework.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\bin\Debug\EntityFramework.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.csprojResolveAssemblyReference.cache
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.pdb

@@ -32,4 +32,4 @@ namespace NlayerApp.DAL.EF
         }
     }
 }
-}
+
