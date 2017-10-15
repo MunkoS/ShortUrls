@@ -75,3 +75,9 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\obj\Debug\NLayerApp.Web.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\obj\Debug\NLayerApp.Web.pdb
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Net.Http.Formatting.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Http.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Http.WebHost.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Net.Http.Formatting.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Http.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Http.WebHost.xml

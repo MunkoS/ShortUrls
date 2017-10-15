@@ -38,9 +38,10 @@ namespace NlayerApp.DAL.Repositories
 
         public void Create(ShortUrlModel shortUrl)
         {
-           db.ShortUrls.Add(shortUrl);
-           db.SaveChanges();
+            db.ShortUrls.Add(shortUrl);
+            db.SaveChanges();
         }
+         
 
         public void Update(ShortUrlModel shortUrl)
         {

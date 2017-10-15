@@ -14,7 +14,7 @@ namespace NLayerApp.Web.Controllers
     public class HomeController : Controller
     {
 
-        IShortUrlServices shortUrlServices;
+        private readonly IShortUrlServices shortUrlServices;
 
         public  HomeController(IShortUrlServices serv)
         {
@@ -26,14 +26,13 @@ namespace NLayerApp.Web.Controllers
             IEnumerable<ShortUrlDto> urlDtos= shortUrlServices.GetAll();
             Mapper.Initialize(cfg => cfg.CreateMap<ShortUrlDto, ShortUrlViewModel>());
             var urls = Mapper.Map<IEnumerable<ShortUrlDto>, List<ShortUrlViewModel>>(urlDtos);
-            return View(urls);
-        }
-
-        public ActionResult About()
-        {
             return View();
         }
 
+        public ActionResult List()
+        {
+            return View();
+        }
 
         public ActionResult Contact()
         {

@@ -22,7 +22,7 @@ namespace NlayerApp.BLL.Services
         public ShortUrlDto GetByUrl(string url)
         {
             var shortUrl = Database.ShortUrls.GetByUrl(url);
-           return Mapper.Map<ShortUrlModel, ShortUrlDto>(shortUrl); 
+            return Mapper.Map<ShortUrlModel, ShortUrlDto>(shortUrl); 
 
         }
 
@@ -31,7 +31,12 @@ namespace NlayerApp.BLL.Services
             Mapper.Initialize(cfg => cfg.CreateMap<ShortUrlModel, ShortUrlDto>());
             return Mapper.Map<IEnumerable<ShortUrlModel>, List<ShortUrlDto>>(Database.ShortUrls.GetAll());
         }
-      
+
+        public void Create(ShortUrlDto item)
+        {
+          Database.ShortUrls.Create(Mapper.Map<ShortUrlDto, ShortUrlModel>(item));
+        }
+
 
         public void Dispose()
         {

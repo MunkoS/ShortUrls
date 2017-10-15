@@ -2,14 +2,7 @@
 @{
     ViewBag.Title = "Список ссылок";
 }
-@section header
-{
-    <style>
-        .text-vertical-center {
-            vertical-align: middle !important;
-        }
-    </style>
-}
+
 @section scripts
 {
     <script type="text/javascript">
@@ -44,26 +37,30 @@
         })
     </script>
 }
+
 <h2>@ViewBag.Title</h2>
 <table class="table table-condensed table-bordered">
     <thead>
         <tr>
             <th>ссылка</th>
-            <th>Короткая ссылка</th>
+            <th>короткая ссылка</th>
             <th>дата создания</th>
             <th>переходы</th>
         </tr>
     </thead>
     <tbody>
+        <!-- ko if: items().length === 0 -->
         <tr>
             <td colspan="3" class="text-center">
                 нет ссылок
             </td>
         </tr>
+        <!-- /ko -->
+        <!-- ko foreach: items -->
         <tr>
-            <td data-bind="text: Url"></td>
-            <td data-bind="text: ShortUrl"></td>
-            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: DateCreated"></td>
+            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: Url"></td>
+            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: ShortUrl"></td>
+            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: Created"></td>
             <td rowspan="2" class="text-center text-vertical-center" data-bind="text: Redirects"></td>
         </tr>
         <tr>

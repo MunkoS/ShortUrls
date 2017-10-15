@@ -26,6 +26,10 @@ namespace NLayerApp.Web
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/js").Include(
+                      "~/Scripts/knockout-{version}.js",
+                      "~/Scripts/knockout.bindings.paging.js"));
         }
     }
 }

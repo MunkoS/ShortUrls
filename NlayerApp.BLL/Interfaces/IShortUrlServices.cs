@@ -10,9 +10,9 @@ namespace NlayerApp.BLL.Interfaces
         IEnumerable<ShortUrlDto> GetAll();
 
         ShortUrlDto GetByUrl(string url);
-      //  ShortUrlDto GetByKey(string key);
+        //  ShortUrlDto GetByKey(string key);
 
-     //   void Create(ShortUrlDto item);
+        void Create(ShortUrlDto item);
 
       //  void Update(ShortUrlDto item);
 
