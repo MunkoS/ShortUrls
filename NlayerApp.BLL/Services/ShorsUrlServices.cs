@@ -26,6 +26,13 @@ namespace NlayerApp.BLL.Services
 
         }
 
+        public IEnumerable<ShortUrlDto> GetAll()
+        {
+            Mapper.Initialize(cfg => cfg.CreateMap<ShortUrlModel, ShortUrlDto>());
+            return Mapper.Map<IEnumerable<ShortUrlModel>, List<ShortUrlDto>>(Database.ShortUrls.GetAll());
+        }
+      
+
         public void Dispose()
         {
             Database.Dispose();

@@ -7,7 +7,7 @@ namespace NlayerApp.BLL.Interfaces
     public interface IShortUrlServices
     {
        
-       // IEnumerable<ShortUrlDto> GetAll();
+        IEnumerable<ShortUrlDto> GetAll();
 
         ShortUrlDto GetByUrl(string url);
       //  ShortUrlDto GetByKey(string key);

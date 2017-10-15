@@ -1,3 +1,4 @@
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\obj\Debug\NLayerApp.Web.csprojResolveAssemblyReference.cache
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ApplicationInsights.config
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\roslyn\csc.exe
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -15,6 +16,9 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\NLayerApp.Web.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\NLayerApp.Web.pdb
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Antlr3.Runtime.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\AutoMapper.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\EntityFramework.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\EntityFramework.SqlServer.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.AI.Agent.Intercept.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.AI.DependencyCollector.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -25,6 +29,10 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.Web.Infrastructure.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Newtonsoft.Json.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Ninject.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Ninject.Web.Common.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Ninject.Web.Mvc.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\NlayerApp.BLL.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Helpers.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Mvc.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Optimization.dll
@@ -32,13 +40,22 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.WebPages.Deployment.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.WebPages.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.WebPages.Razor.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\WebActivatorEx.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\WebGrease.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\NlayerApp.DAL.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\NlayerApp.BLL.pdb
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\AutoMapper.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\EntityFramework.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\EntityFramework.SqlServer.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.AI.DependencyCollector.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.AI.Web.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.AI.WindowsServer.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.ApplicationInsights.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Ninject.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Ninject.Web.Common.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Ninject.Web.Mvc.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Helpers.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Mvc.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.Optimization.xml
@@ -48,6 +65,7 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\System.Web.WebPages.Razor.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Antlr3.Runtime.pdb
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\Newtonsoft.Json.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\NlayerApp.DAL.pdb
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ru\System.Web.Helpers.resources.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ru\System.Web.Mvc.resources.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ru\System.Web.Optimization.resources.dll
@@ -55,6 +73,5 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ru\System.Web.WebPages.resources.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ru\System.Web.WebPages.Deployment.resources.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\bin\ru\System.Web.WebPages.Razor.resources.dll
-c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\obj\Debug\NLayerApp.Web.csprojResolveAssemblyReference.cache
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\obj\Debug\NLayerApp.Web.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NLayerApp.Web\obj\Debug\NLayerApp.Web.pdb

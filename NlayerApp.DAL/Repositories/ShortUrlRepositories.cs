@@ -10,6 +10,7 @@ namespace NlayerApp.DAL.Repositories
 {
     public class ShortUrlRepositories : IRepository<ShortUrlModel>
     {
+      
         private UrlContext db;
 
         public ShortUrlRepositories(UrlContext context)
@@ -20,7 +21,10 @@ namespace NlayerApp.DAL.Repositories
 
         public IEnumerable<ShortUrlModel> GetAll()
         {
+          var v=  db.ShortUrls.FirstOrDefault(x => x.Url == "1");
             return db.ShortUrls;
+          
+          
         }
         public ShortUrlModel GetByUrl(string url)
         {

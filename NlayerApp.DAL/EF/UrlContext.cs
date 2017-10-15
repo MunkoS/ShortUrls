@@ -8,16 +8,22 @@ namespace NlayerApp.DAL.EF
     public class UrlContext : DbContext
     {
         public DbSet<ShortUrlModel> ShortUrls { get; set; }
-     
+
 
         static UrlContext()
         {
             Database.SetInitializer<UrlContext>(new UrlDbInitializer());
         }
-        public UrlContext(string connectionString)
-            : base(connectionString)
-        {
-        }
+        /*  public UrlContext(string connectionString)
+              : base(connectionString)
+          {
+          }*/
+          public UrlContext()
+          : base("MyDB")
+      {
+      }
+
+
     }
 
     public class UrlDbInitializer : DropCreateDatabaseIfModelChanges<UrlContext>

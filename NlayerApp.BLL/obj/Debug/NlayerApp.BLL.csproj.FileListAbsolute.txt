@@ -1,1 +1,13 @@
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\NlayerApp.BLL.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\NlayerApp.BLL.pdb
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\AutoMapper.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\Ninject.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\NlayerApp.DAL.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\EntityFramework.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\NlayerApp.DAL.pdb
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\AutoMapper.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\Ninject.xml
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin\Debug\EntityFramework.xml
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.csprojResolveAssemblyReference.cache
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.dll
+c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.pdb
