@@ -12,6 +12,7 @@ namespace NlayerApp.DAL.Repositories
     {
       
         private UrlContext db;
+       
 
         public ShortUrlRepositories(UrlContext context)
         {
@@ -21,9 +22,7 @@ namespace NlayerApp.DAL.Repositories
 
         public IEnumerable<ShortUrlModel> GetAll()
         {
-          var v=  db.ShortUrls.FirstOrDefault(x => x.Url == "1");
             return db.ShortUrls;
-          
           
         }
         public ShortUrlModel GetByUrl(string url)
@@ -36,16 +35,28 @@ namespace NlayerApp.DAL.Repositories
             return db.ShortUrls.FirstOrDefault(x => x.ShortUrl == key);
         }
 
-        public void Create(ShortUrlModel shortUrl)
+        public int Create(ShortUrlModel shortUrl)
         {
+            shortUrl.Id= db.ShortUrls.Count() + 1;
             db.ShortUrls.Add(shortUrl);
             db.SaveChanges();
+            return shortUrl.Id;
         }
          
 
         public void Update(ShortUrlModel shortUrl)
         {
+           
+            var stored = db.ShortUrls.FirstOrDefault(x => x.Id == shortUrl.Id);
+            if (stored == null)
+                return;
+            stored.ShortUrl = shortUrl.ShortUrl;
+            stored.Url = shortUrl.Url;
+            stored.CountRedirects = shortUrl.CountRedirects;
+            stored.DateCreated = shortUrl.DateCreated;
+            
             db.SaveChanges();
+
         }
     }
 }

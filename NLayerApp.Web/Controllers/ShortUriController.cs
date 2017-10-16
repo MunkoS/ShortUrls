@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Web.Http;
 
 
+
 namespace NLayerApp.Web.Controllers
 {
     public class ShortUriController : ApiController
@@ -16,10 +17,12 @@ namespace NLayerApp.Web.Controllers
 
         public ShortUriController(IShortUrlServices manager)
         {
-            _shortUrlServices = manager;
+           // IKernel ninjectKernel = new StandardKernel();
+           // ninjectKernel.Bind<IShortUrlServices>().To<ShorsUrlServices>();
+           // _shortUrlServices = ninjectKernel.Get<IShortUrlServices>();
+             _shortUrlServices = manager;
             _roteFormat = "{0}/r/{1}";
         }
-
 
         string CreateUrl(string key, string host)
         {
@@ -43,13 +46,15 @@ namespace NLayerApp.Web.Controllers
             return Redirect(new Uri(url));
         }
 
-     /* [Route("api/create")]
+       /*[Route("api/create")]
         [HttpPost]
         public HttpResponseMessage Create([FromBody] string url)
         {
-           
-             var result = _shortUrlServices.Create(new Uri(url));
-            return Request.CreateResponse(CreateUrl(result, Host));
+            var a= new ShortUrlDto() ;
+            a.Url = url;
+            _shortUrlServices.Create(a);
+            return Request.CreateResponse(CreateUrl(url, Host));
+            //return Request.CreateResponse(CreateUrl(result, Host));
         }*/
 
         [Route("api/links")]

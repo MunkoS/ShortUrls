@@ -14,13 +14,14 @@ namespace NlayerApp.DAL.EF
         {
             Database.SetInitializer<UrlContext>(new UrlDbInitializer());
         }
-        /*  public UrlContext(string connectionString)
+         public UrlContext(string connectionString="MyDB")
               : base(connectionString)
           {
-          }*/
-          public UrlContext()
+          }
+         public UrlContext()
           : base("MyDB")
       {
+
       }
 
 

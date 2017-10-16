@@ -53,9 +53,9 @@
     <Compile Include="Entities\ShortUrlModel.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="Migrations\201710150808444_FirstMigrations.cs" />
-    <Compile Include="Migrations\201710150808444_FirstMigrations.Designer.cs">
-      <DependentUpon>201710150808444_FirstMigrations.cs</DependentUpon>
+    <Compile Include="Migrations\201710160356436_first.cs" />
+    <Compile Include="Migrations\201710160356436_first.Designer.cs">
+      <DependentUpon>201710160356436_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,8 +67,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710150808444_FirstMigrations.resx">
-      <DependentUpon>201710150808444_FirstMigrations.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710160356436_first.resx">
+      <DependentUpon>201710160356436_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

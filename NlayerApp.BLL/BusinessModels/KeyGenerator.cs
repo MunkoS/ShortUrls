@@ -12,9 +12,9 @@ namespace NlayerApp.BLL.BusinessModels
         static readonly int baseNum = 62;
         static readonly String baseDigits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-        public string Create(ShortUrlDto url)
+        public string Create(int id)
         {
-            var id = url.Id;
+            
             var toValue = new StringBuilder(id == 0 ? "0" : "");
 
             while (id != 0)

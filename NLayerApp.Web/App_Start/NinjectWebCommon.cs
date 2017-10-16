@@ -12,6 +12,9 @@ namespace NLayerApp.Web.App_Start
     using Ninject.Web.Common;
     using Ninject.Modules;
     using NlayerApp.BLL.Infrastructure;
+    using NlayerApp.BLL.Interfaces;
+    using NlayerApp.BLL.BusinessModels;
+
 
     public static class NinjectWebCommon 
     {
@@ -41,7 +44,7 @@ namespace NLayerApp.Web.App_Start
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
-            var modules = new INinjectModule[] { new ServiceModule("DefaultConnection") };
+            var modules = new INinjectModule[] { new ServiceModule("MyDB") };
             var kernel = new StandardKernel(modules);
             try
             {
@@ -64,7 +67,9 @@ namespace NLayerApp.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            System.Web.Mvc.DependencyResolver.SetResolver(new NLayerApp.Web.Util.NinjectDependencyResolver(kernel));
+        //    kernel.Bind<UrlManager>().ToSelf().InRequestScope();
+            kernel.Bind<IKeyGenerator>().To<KeyGenerator>().InRequestScope();
+            System.Web.Mvc.DependencyResolver.SetResolver(new Util.NinjectDependencyResolver(kernel));
         }        
     }
 }

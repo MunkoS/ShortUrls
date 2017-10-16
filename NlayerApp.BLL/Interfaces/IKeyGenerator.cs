@@ -8,6 +8,6 @@ namespace NlayerApp.BLL.Interfaces
 {
     public interface IKeyGenerator
     {
-        string Create(ShortUrlDto url);
+        string Create(int id);
     }
 }

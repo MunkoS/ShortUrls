@@ -9,3 +9,15 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\obj
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.pdb
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.Migrations.FirstMigrations.resources
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.csproj.GenerateResource.Cache
+E:\shortUrl\ShortUrls\NlayerApp.DAL\bin\Debug\NlayerApp.DAL.dll.config
+E:\shortUrl\ShortUrls\NlayerApp.DAL\bin\Debug\NlayerApp.DAL.dll
+E:\shortUrl\ShortUrls\NlayerApp.DAL\bin\Debug\NlayerApp.DAL.pdb
+E:\shortUrl\ShortUrls\NlayerApp.DAL\bin\Debug\EntityFramework.dll
+E:\shortUrl\ShortUrls\NlayerApp.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\shortUrl\ShortUrls\NlayerApp.DAL\bin\Debug\EntityFramework.xml
+E:\shortUrl\ShortUrls\NlayerApp.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\shortUrl\ShortUrls\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.dll
+E:\shortUrl\ShortUrls\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.pdb
+E:\shortUrl\ShortUrls\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.Migrations.first.resources
+E:\shortUrl\ShortUrls\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.csproj.GenerateResource.Cache
+E:\shortUrl\ShortUrls\NlayerApp.DAL\obj\Debug\NlayerApp.DAL.csprojResolveAssemblyReference.cache

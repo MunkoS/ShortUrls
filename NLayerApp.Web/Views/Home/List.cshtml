@@ -2,84 +2,31 @@
 @{
     ViewBag.Title = "Список ссылок";
 }
-
-@section scripts
-{
-    <script type="text/javascript">
-        $(function () {
-            var vm = function () {
-                var self = this;
-
-                self.active = false;
-                self.total = ko.observable(0);
-                self.index = ko.observable(0);
-                self.size = ko.observable(10);
-
-                self.items = ko.observableArray([]);
-                self.load = ko.computed(function () {
-                    if (self.active) return;
-                    self.active = true;
-                    $.getJSON('@Url.Content("~")api/links?index=' + self.index() + '&size=' + self.size(), function (data) {
-                        ko.utils.arrayForEach(data.result, function (item) {
-                            item.Created = new Date(item.Created).toLocaleString("ru");
-                        });
-                        self.items(data.result);
-                        self.total(data.total);
-                        console.log('getJSON OK');
-                    }).fail(function () {
-                        alert('Что-то пошло не так!');
-                    }).done(function() {
-                        self.active = false;
-                    });
-                }, self);
-            };
-            ko.applyBindings(new vm());
-        })
-    </script>
-}
-
 <h2>@ViewBag.Title</h2>
-<table class="table table-condensed table-bordered">
-    <thead>
-        <tr>
-            <th>ссылка</th>
-            <th>короткая ссылка</th>
-            <th>дата создания</th>
-            <th>переходы</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- ko if: items().length === 0 -->
-        <tr>
-            <td colspan="3" class="text-center">
-                нет ссылок
-            </td>
-        </tr>
-        <!-- /ko -->
-        <!-- ko foreach: items -->
-        <tr>
-            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: Url"></td>
-            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: ShortUrl"></td>
-            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: Created"></td>
-            <td rowspan="2" class="text-center text-vertical-center" data-bind="text: Redirects"></td>
-        </tr>
-        <tr>
-            <td data-bind="text: Short"></td>
-        </tr>
-        <!-- /ko -->
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>
-                Всего: <span data-bind="text: total"></span>
-            </td>
-            <td colspan="2">
-                <div class="pull-right">
-                    <span>На странице:</span>
-                    <span data-bind="pageSize: items, pager: { current: index, total: total, size: size }"></span>
-                </div>
-            </td>
-        </tr>
-    </tfoot>
-</table>
-<div data-bind="pagination: items, pager: { current: index, total: total, size: size }"></div>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div>
+        <table class="table table-bordered">
+            <tr>
+                <td><p>Ссылка</p></td>
+                <td><p>Короткая ссылка</p></td>
+                <td><p>Дата создания</p></td>
+                <td><p>количество переходов</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Url)
+            {
+                <tr>
+                    <td><p>@b.Url</p></td>
+                    <td><p>@b.ShortUrl</p></td>
+                    <td><p>@b.DateCreated</p></td>
+                    <td><p>@b.CountRedirects</p></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

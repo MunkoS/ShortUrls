@@ -3,20 +3,20 @@ using NlayerApp.BLL.DTO;
 using NlayerApp.DAL.Entities;
 using NlayerApp.BLL.BusinessModels;
 using NlayerApp.DAL.Interfaces;
-using NlayerApp.BLL.Infrastructure;
 using NlayerApp.BLL.Interfaces;
 using System.Collections.Generic;
 using AutoMapper;
-
+using System.Transactions;
 namespace NlayerApp.BLL.Services
 {
     public class ShorsUrlServices : IShortUrlServices
     {
         IUnitOfWork Database { get; set; }
-
-        public ShorsUrlServices(IUnitOfWork uow)
+        private readonly IKeyGenerator _generator;
+        public ShorsUrlServices(IUnitOfWork uow, IKeyGenerator generator)
         {
             Database = uow;
+            _generator = generator;
         }
 
         public ShortUrlDto GetByUrl(string url)
@@ -32,9 +32,36 @@ namespace NlayerApp.BLL.Services
             return Mapper.Map<IEnumerable<ShortUrlModel>, List<ShortUrlDto>>(Database.ShortUrls.GetAll());
         }
 
-        public void Create(ShortUrlDto item)
+        public string Create(Uri url)
         {
-          Database.ShortUrls.Create(Mapper.Map<ShortUrlDto, ShortUrlModel>(item));
+
+            var stored = Database.ShortUrls.GetByUrl(url.ToString());
+            if (stored != null)
+                return stored.ShortUrl;
+
+            var shortUrl = new ShortUrlDto
+            {
+                DateCreated = DateTime.UtcNow,
+                Url = url.ToString(),
+                CountRedirects = 0
+            };
+            
+            using (var trans = new TransactionScope())
+            {
+                Mapper.Initialize(cfg => cfg.CreateMap<ShortUrlDto, ShortUrlModel>());
+                shortUrl.Id = Database.ShortUrls.Create(Mapper.Map<ShortUrlDto, ShortUrlModel>(shortUrl));
+              
+                shortUrl.ShortUrl = _generator.Create(shortUrl.Id);
+
+              
+               
+                Database.ShortUrls.Update(Mapper.Map<ShortUrlDto, ShortUrlModel>(shortUrl));
+
+                trans.Complete();
+            }
+
+            return shortUrl.ShortUrl;
+          
         }
 
 

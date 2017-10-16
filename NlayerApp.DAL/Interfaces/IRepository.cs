@@ -12,7 +12,7 @@ namespace NlayerApp.DAL.Interfaces
         T GetByUrl(string url);
         T GetByKey(string key);
 
-        void Create(T item);
+        int Create(T item);
 
         void Update(T item);
 

@@ -15,8 +15,8 @@ namespace NlayerApp.DAL.Repositories
 
         public EFUnitOfWork(string connectionString)
         {
-            //  db = new UrlContext(connectionString);
-            db = new UrlContext();
+              db = new UrlContext(connectionString);
+          //  db = new UrlContext();
         }
         public IRepository<ShortUrlModel> ShortUrls
         {

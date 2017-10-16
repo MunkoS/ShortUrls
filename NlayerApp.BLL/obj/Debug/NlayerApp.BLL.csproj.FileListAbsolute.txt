@@ -11,3 +11,16 @@ c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\bin
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.csprojResolveAssemblyReference.cache
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.dll
 c:\users\sergey\documents\visual studio 2015\Projects\ShortUrl\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.pdb
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\NlayerApp.BLL.dll
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\NlayerApp.BLL.pdb
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\AutoMapper.dll
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\Ninject.dll
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\NlayerApp.DAL.dll
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\EntityFramework.dll
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\NlayerApp.DAL.pdb
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\AutoMapper.xml
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\Ninject.xml
+E:\shortUrl\ShortUrls\NlayerApp.BLL\bin\Debug\EntityFramework.xml
+E:\shortUrl\ShortUrls\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.csprojResolveAssemblyReference.cache
+E:\shortUrl\ShortUrls\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.dll
+E:\shortUrl\ShortUrls\NlayerApp.BLL\obj\Debug\NlayerApp.BLL.pdb

@@ -12,9 +12,7 @@ namespace NlayerApp.BLL.Interfaces
         ShortUrlDto GetByUrl(string url);
         //  ShortUrlDto GetByKey(string key);
 
-        void Create(ShortUrlDto item);
-
-      //  void Update(ShortUrlDto item);
+        string Create(Uri url);
 
         void Dispose();
     }
