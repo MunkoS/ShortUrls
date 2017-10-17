@@ -18,11 +18,22 @@ app.controller('FormUrlCtrl', ['$scope', '$http', 'DataLoaderService', function 
     $scope.shortUrl = '';
  
     $scope.Create = function () {
-     
-        DataLoaderService.saveUrlRequest($scope.onRequestSaved, $scope.url);
+        if ($scope.urlcheck($scope.url)) {
+            DataLoaderService.saveUrlRequest($scope.onRequestSaved, $scope.url);
+        } 
+        
     };
-
+    $scope.urlcheck = function (url) {
+        var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+        if (!regex.test(url)) {
+            alert("Введите корректный урл.");
+            return false;
+        } else {
+            return true;
+        }
+    }
     $scope.onRequestSaved = function (url) {
+      
         $scope.shortUrl = url.data;
        
         

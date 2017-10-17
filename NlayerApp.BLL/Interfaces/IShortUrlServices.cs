@@ -10,7 +10,8 @@ namespace NlayerApp.BLL.Interfaces
         IEnumerable<ShortUrlDto> GetAll();
 
         ShortUrlDto GetByUrl(string url);
-        //  ShortUrlDto GetByKey(string key);
+
+        string GetByKey(string key);
 
         string Create(Uri url);
 

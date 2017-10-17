@@ -32,6 +32,21 @@ namespace NlayerApp.BLL.Services
             return Mapper.Map<IEnumerable<ShortUrlModel>, List<ShortUrlDto>>(Database.ShortUrls.GetAll());
         }
 
+        public string GetByKey(string key)
+        {
+            var Url = Database.ShortUrls.GetByKey(key);
+            if (Url == null) return Url?.Url;
+            Url.CountRedirects++;
+            using (var trans = new TransactionScope())
+            {
+                Database.ShortUrls.Update(Url);
+                trans.Complete();
+            }
+            return Url.Url;
+
+        }
+
+
         public string Create(Uri url)
         {
 
